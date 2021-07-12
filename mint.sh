@@ -10,16 +10,14 @@ echo             "#   MAIL:- ARWAZKHAN350@GAMIL.COM               #"
 echo             "#################################################"
 passwd root ; echo -n "Username. Example abc : "
 read USERNAME
-apt-get update ; apt-get install ssh -y ; apt-get install firefox -y ; apt-get install gnome-shell -y ; apt-get install twinkle -y ; 
-echo "allow-guest=false" >> /etc/lightdm/lightdm.conf ;
+apt-get update ; apt-get install ssh -y ; apt-get install firefox -y ; apt-get install twinkle -y ; 
 gpasswd -d $USERNAME sudo ;  touch /home/$USERNAME/Desktop/twinkle\kill ; echo "killall -9 twinkle" >> /home/$USERNAME/Desktop/twinkle\kill ; chmod +x /home/$USERNAME/Desktop/twinkle\kill ; apt-get install pavucontrol -y ; chmod 444 /media ;
-sed -i "s/NoDisplay=false/NoDisplay=true/g" /etc/xdg/autostart/*.desktop 
-echo "cat << EOF
-set superusers=IT
-password IT nahiduga
-EOF" >> /etc/grub.d/00_header
-sleep 3
-grub-mkconfig -o /boot/grub/grub.cfg ;
+#echo "cat << EOF
+#set superusers=IT
+#password IT nahiduga
+#EOF" >> /etc/grub.d/00_header
+#sleep 3
+#grub-mkconfig -o /boot/grub/grub.cfg ;
 sleep 1
 echo "127.0.0.1 ######11111111###### 
 127.0.0.1 www.google.com
@@ -8449,7 +8447,7 @@ echo "127.0.0.1 ######11111111######
 127.0.0.1 web.telegram.org/#/login 
 127.0.0.1 www.web.telegram.org" >> /etc/hosts ;
 rm -rf /root/.bash_history ; /home/$USERNAME/.bash_history ;
-rm -rf /root/proxy.sh ; rm -rf /home/$USERNAME/proxy.sh ; rm -rf /root/proxy.sh ; rm -rf /home/$USERNAME/Desktop/proxy.sh ; 
+rm -rf /root/mint.sh ; rm -rf /home/$USERNAME/mint.sh ; rm -rf /root/mint.sh ; rm -rf /home/$USERNAME/Desktop/mint.sh ; 
 echo "                #THANK YOU INSTALLATION COMPLETE#"
 echo            "#SYSTEM WILL GOING TO RESTART WITH IN 5 SEC.#"
 sleep 5
